@@ -4,6 +4,7 @@ import Link from './Link';
 import Catch22 from './puzzle_lists/catch_22_list'
 import Aerosmith from './puzzle_lists/aerosmith_list'
 import Blacklist from './puzzle_lists/blacklist_list'
+import GuysAndDolls from './puzzle_lists/guys_and_dolls_list'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       The overall theme of the event was 'theater'.
       <br/>
       <i>The puzzles in this module are paired.</i>
+      <ul><GuysAndDolls/></ul>
       <h3>PH21: Meta Knight (Puzzle)</h3>
       The overall theme of the event was 'video games'.
       <br/>
