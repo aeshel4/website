@@ -1,5 +1,8 @@
 import './App.css';
 import Puzzle from './Puzzle';
+import Link from './Link';
+import Catch22 from './puzzle_lists/catch_22_list'
+import Aerosmith from './puzzle_lists/aerosmith_list'
 
 function App() {
   return (
@@ -9,65 +12,108 @@ function App() {
           Amos' Puzzles
         </p>
       </header>
-      <h2>Microsoft Puzzle Hunt Modules</h2>
-      <h3>Catch-22 (PH16)</h3>
+      <h2>Microsoft Puzzle Hunt</h2>
+      I helped restart this Hunt with the "module era", and often helped on the coordination side.
+      <h3>PH16: Catch-22 (Module)</h3>
       The overall theme of the event was 'books'.
       <br/>
       <i>The puzzles in this module needs to be solved simultaneously.</i>
-      <ul>
-        <li><Puzzle
-          display_name='Clevinger'
-          puzzle_link_id='1Cbu9cebKATlJTxiIxA5XPUatBvtAgzPF'
-          solution_link_id='1QOsNI5M8jUWVdBJX2eD80qjWNMFRcdPX'
-          answer='UNIT'
-        /></li>
-        <li><Puzzle
-          display_name='Giuseppe'
-          puzzle_link_id='1c_-528KgbmtK6R-t2XqqKOY4qsRFfvyB'
-          solution_link_id='1gFlDGCGT-PRCsMcjX9pKqoMNqwcBoe4y'
-          answer='BOATS'
-        /></li>
-        <li><Puzzle
-          display_name='Major ― de Coverley'
-          puzzle_link_id='1R_9KfS2SmHskhGusQHXL4koK8j7Cqvgk'
-          solution_link_id='13aox158vQTYrtsx_HDN1sPILhuw1e8gY'
-          answer='PUBLIC'
-        /></li>
-        <li><Puzzle
-          display_name='Major Major Major'
-          puzzle_link_id='1OuSgz_btetC8uRmBej2nheOTx3oGz7J2'
-          solution_link_id='1g68noAiyCT5rO3edJXThuSdURbu1XimX'
-          answer='PITCH'
-        /></li>
-        <li><Puzzle
-          display_name='(Milo) Minderbinder'
-          puzzle_link_id='1vl9ARcvw1UcLvU0cpE6ebZjDoPDuQqjD'
-          solution_link_id='1jVYZGvmjQycPBLZ2HUoG5RK35Vlk7ov0'
-          answer='INKS'
-        /></li>
-        <li><Puzzle
-          display_name='The Soldier in White'
-          puzzle_link_id='1ouAqsW-7AO1l3AJrzu3LYyPYMV7dCuSV'
-          solution_link_id='1bpeRsmwKdAP0JdCrcOMpzrVeI4rh7y8O'
-          answer='LACK'
-        /></li>
-        <li><Puzzle
-          display_name='Washington Irving'
-          puzzle_link_id='13d50Cz5bTPMCnTIQhjwOzSuof-xdKe1y'
-          solution_link_id='1taAL7s3M4JH0TladmkqAtbzq_g8KB8az'
-          answer='COINS'
-        /></li>
-        <li><Puzzle
-          display_name='[Meta] Closing Time'
-          puzzle_link_id='1XA1FOA6OB-n1Aai-9zQ6jzeiwMq4djR4'
-          solution_link_id='1bUCvKQSN0rTDMvZgIsNJWixg56KRlw0e'
-          answer='LUNATIC'
-        /></li>
-      </ul>
-      <h3>Aerosmith (PH17)</h3>
+      <ul><Catch22/></ul>
+      <h3>PH17: Aerosmith (Module)</h3>
       The overall theme of the event was 'music'.
       <br/>
-      <i>The non-theme I used for this was hex grids.</i>
+      <i>The puzzles in this module are all on hex grids.</i>
+      <ul><Aerosmith/></ul>
+      <h3>PH19: The Blacklist (Module)</h3>
+      The overall theme of the event was 'TV'.
+      <br/>
+      <h3>PH20: Guys and Dolls (Module)</h3>
+      The overall theme of the event was 'theater'.
+      <br/>
+      <i>The puzzles in this module are paired.</i>
+      <h3>PH21: Meta Knight (Puzzle)</h3>
+      The overall theme of the event was 'video games'.
+      <br/>
+      <i>I only wrote a single standalone puzzle within the Super Smash Bros. module.</i>
+      <Puzzle
+        display_name='Meta Knight'
+        puzzle_link_id='12iKy_cnWMVp4fhe2YmwD6GnDdYm2IUO9'
+        solution_link_id='14Zi4PhiyIseYqoLELP5looLRnfi34SAC'
+        answer='BLIMPS'
+      />
+      <h3>PH23:&nbsp;
+        <Link
+          link='https://puzzle.university/'
+          display_text='Puzzle University'
+        />
+        &nbsp;(Event)
+      </h3>
+      I was heavily involved in this entire (non-module) event; I'm particularly proud of:
+      <ul>
+        <li>The&nbsp;
+        <Link
+          link='https://puzzle.university/round/computer-science.html'
+          display_text='Computer Science round'
+        />
+        , a spiritual successor to Catch-22
+        </li>
+        <li>The&nbsp;
+        <Link
+          link='https://puzzle.university/round/metameta.html'
+          display_text='final meta'
+        />
+        &nbsp;which is fed by every answer and meta answer in the event.
+        </li>
+        <li>
+        <Link
+          link='https://puzzle.university/puzzle/writing-complementary-characters.html'
+          display_text='Writing Complementary Characters'
+        />
+        : a standalone puzzle.
+        </li>
+        <li>
+          I also have the meta & structure for a Physics round that we had to cut,
+          and that I one day hope to write the puzzles for.
+        </li>
+      </ul>
+      <h2><Link
+        link='https://puzzles.mit.edu/2013/'
+        display_text='Mystery Hunt 2013'
+      /></h2>
+      I was heavily involved with this event, writing a number of puzzles, and editing many more. Some highlights:
+      <ul>
+        <li>
+          I was the primary lead/editor for the&nbsp;
+          <Link
+            link='https://puzzles.mit.edu/2013/coinheist.com/rubik/index.html'
+            display_text='Rubik round'
+          />
+          &nbsp;structure/metas, which I'm particularly proud of.
+          I specifically wrote <b>Cardinal Red</b> and <b>Yellow Flag</b>, plus Cryptocube (the round meta).
+        </li>
+        <li><Link
+          link='https://puzzles.mit.edu/2013/enigmavalley.com/the_silver_screen/'
+          display_text='The Silver Screen'
+        /></li>
+        <li>
+        <Link
+          link='https://puzzles.mit.edu/2013/coinheist.com/rubik/the_maze/index.html'
+          display_text='The Maze'
+        />
+        : I had the idea for this, and wish we'd run it with the full maze visible at the start, as well as the letter grid in the maze itself.
+        </li>
+      </ul>
+      <h2>DASH</h2>
+      I wrote a single puzzle in&nbsp;
+      <Link
+        link='https://playdash.org/DASH12/'
+        display_text='DASH 12'
+      />
+      <footer>
+        You can find me on Discord: amosisfamous
+        <br/>
+        Or email my name at puzzlehunt.org
+      </footer>
     </div>
   );
 }

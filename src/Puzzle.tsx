@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from './Link';
 
 interface PuzzleProps {
   display_name: string;
@@ -26,23 +27,17 @@ const Puzzle = ({ display_name, puzzle_link_id, solution_link_id, answer }: Puzz
   };
 
   return (
-    <div>
+    <div><li>
       <b>{display_name}</b>:&nbsp;
-      <a
-        href={'https://drive.google.com/file/d/' + puzzle_link_id + '/view?usp=drive_link'}
-        target="_blank"  // Open the link in a new tab
-        rel="noopener noreferrer"
-      >
-        puzzle
-      </a>
+      <Link
+        link={'https://drive.google.com/file/d/' + puzzle_link_id + '/view?usp=drive_link'}
+        display_text='puzzle'
+      />
       &nbsp;/&nbsp;
-      <a
-        href={'https://drive.google.com/file/d/' + solution_link_id + '/view?usp=drive_link'}
-        target="_blank"  // Open the link in a new tab
-        rel="noopener noreferrer"
-      >
-        solution
-      </a>
+      <Link
+        link={'https://drive.google.com/file/d/' + solution_link_id + '/view?usp=drive_link'}
+        display_text='solution'
+      />
       &emsp;
       <input
         type="text"
@@ -54,7 +49,7 @@ const Puzzle = ({ display_name, puzzle_link_id, solution_link_id, answer }: Puzz
       />
       &nbsp;
       <button onClick={checkAnswer}>Check</button>
-    </div>
+    </li></div>
   );
 };
 
