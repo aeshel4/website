@@ -3,6 +3,7 @@ import Puzzle from './Puzzle';
 import Link from './Link';
 import Catch22 from './puzzle_lists/catch_22_list'
 import Aerosmith from './puzzle_lists/aerosmith_list'
+import Blacklist from './puzzle_lists/blacklist_list'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <h3>PH19: The Blacklist (Module)</h3>
       The overall theme of the event was 'TV'.
       <br/>
+      <ul><Blacklist/></ul>
       <h3>PH20: Guys and Dolls (Module)</h3>
       The overall theme of the event was 'theater'.
       <br/>
