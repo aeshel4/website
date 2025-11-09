@@ -10,11 +10,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Amos' Puzzles
-        </p>
+        Amos' Puzzles
       </header>
-      <h2>Microsoft Puzzle Hunt</h2>
+      <h1>Microsoft Puzzle Hunt</h1>
       I helped restart this Hunt with the "module era", and often helped on the coordination side.
       <h3>PH16: Catch-22 (Module)</h3>
       The overall theme of the event was 'books'.
@@ -80,10 +78,10 @@ function App() {
           and that I one day hope to write the puzzles for.
         </li>
       </ul>
-      <h2><Link
+      <h1><Link
         link='https://puzzles.mit.edu/2013/'
         display_text='Mystery Hunt 2013'
-      /></h2>
+      /></h1>
       I was heavily involved with this event, writing a number of puzzles, and editing many more. Some highlights:
       <ul>
         <li>
@@ -107,13 +105,13 @@ function App() {
         : I had the idea for this, and wish we'd run it with the full maze visible at the start, as well as the letter grid in the maze itself.
         </li>
       </ul>
-      <h2>DASH</h2>
+      <h1>DASH</h1>
       I wrote a single puzzle in&nbsp;
       <Link
         link='https://playdash.org/DASH12/'
         display_text='DASH 12'
       />
-      <footer>
+      <footer className="App-footer">
         You can find me on Discord: amosisfamous
         <br/>
         Or email my name at puzzlehunt.org
